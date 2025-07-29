@@ -1,0 +1,114 @@
+<!-- 页面容器 -->
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="header-left">
+      <image class="school-icon" src="/images/school-icon.png" mode="aspectFit"></image>
+      <text class="school-name">思源学校</text>
+    </view>
+    <view class="header-right">
+      <image class="search-icon" src="/images/search-icon.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <!-- 学生信息卡片 -->
+  <view class="student-card">
+    <view class="student-info">
+      <image class="avatar" src="/images/avatar.png" mode="aspectFit"></image>
+      <view class="student-details">
+        <text class="student-name">娜娜子</text>
+        <text class="student-class">5年级2班</text>
+      </view>
+    </view>
+    
+    <view class="stats">
+      <view class="stat-item">
+        <text class="stat-number">89</text>
+        <text class="stat-label">成长值</text>
+      </view>
+      <view class="stat-item">
+        <text class="stat-number">1</text>
+        <text class="stat-label">励章等级</text>
+      </view>
+    </view>
+    
+    <image class="trophy-icon" src="/images/trophy.png" mode="aspectFit"></image>
+  </view>
+
+  <!-- 功能模块网格 -->
+  <view class="modules-grid">
+    <!-- 第一行 -->
+    <view class="module-row">
+      <view class="module-item" bindtap="navigateToModule" data-module="behavior">
+        <view class="module-icon behavior-icon">
+          <image src="/images/brain-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">行为基础</text>
+      </view>
+      <view class="module-item" bindtap="navigateToModule" data-module="academic">
+        <view class="module-icon academic-icon">
+          <image src="/images/academic-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">学业基础</text>
+      </view>
+    </view>
+
+    <!-- 第二行 -->
+    <view class="module-row">
+      <view class="module-item" bindtap="navigateToModule" data-module="activity">
+        <view class="module-icon activity-icon">
+          <image src="/images/flag-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">实践活动</text>
+      </view>
+      <view class="module-item" bindtap="navigateToModule" data-module="health">
+        <view class="module-icon health-icon">
+          <image src="/images/health-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">体质健康</text>
+      </view>
+    </view>
+
+    <!-- 第三行 -->
+    <view class="module-row">
+      <view class="module-item" bindtap="navigateToModule" data-module="interest">
+        <view class="module-icon interest-icon">
+          <image src="/images/interest-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">兴趣爱好</text>
+      </view>
+      <view class="module-item" bindtap="navigateToModule" data-module="art">
+        <view class="module-icon art-icon">
+          <image src="/images/art-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">艺术素养</text>
+      </view>
+    </view>
+
+    <!-- 第四行 -->
+    <view class="module-row">
+      <view class="module-item single" bindtap="navigateToModule" data-module="personal">
+        <view class="module-icon personal-icon">
+          <image src="/images/personal-icon.png" mode="aspectFit"></image>
+        </view>
+        <text class="module-label">个性发展</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部导航栏 -->
+<view class="bottom-nav">
+  <view class="nav-item active">
+    <image class="nav-icon" src="/images/home-active.png" mode="aspectFit"></image>
+  </view>
+  <view class="nav-item">
+    <image class="nav-icon" src="/images/chat.png" mode="aspectFit"></image>
+  </view>
+  <view class="nav-item">
+    <image class="nav-icon" src="/images/planet.png" mode="aspectFit"></image>
+  </view>
+  <view class="nav-item">
+    <image class="nav-icon" src="/images/profile.png" mode="aspectFit"></image>
+  </view>
+</view>
